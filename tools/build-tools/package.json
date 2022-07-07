@@ -1,0 +1,36 @@
+{
+  "name": "@granfino-ui/build-tools",
+  "version": "0.0.1",
+  "description": "Granfino Build Tools",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "base.json",
+    "node16.json",
+    "react-library.json",
+    "ts.storybook.json",
+    "README.md"
+  ],
+  "keywords": [],
+  "author": "Lucas Bueno <bueno@vulcanica.dev>",
+  "homepage": "https://github.com/buenolucas/granfino-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buenolucas/granfino-ui.git"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "lint": "TIMING=1 eslint src/**/*.ts* --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "ts-node": "^10.7.0",
+    "typescript": "^4.5.4",
+    "vite": "2.9.6",
+    "eslint": "^8.19.0",
+    "tsup": "^6.1.3"
+  }
+}

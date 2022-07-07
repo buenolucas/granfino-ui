@@ -1,0 +1,7 @@
+{
+  "extends": "@granfino-ui/build-tools/ts.storybook.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": ["stories/**/*.tsx", "./defs.d.ts"]
+}

@@ -1,4 +1,0 @@
-{
-  "extends": "@atmosfera/ts-config/next.json",
-  "compilerOptions": {}
-}

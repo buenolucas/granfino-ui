@@ -1,4 +1,0 @@
-{
-  "extends": "@atmosfera/ts-config/node14.json",
-  "compilerOptions": {}
-}
