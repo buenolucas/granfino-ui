@@ -1,16 +1,16 @@
 {
   "baseBranch": "origin/main",
   "pipeline": {
-    "test": {
-      "outputs": ["coverage/**"],
-      "dependsOn": ["build"]
-    },
     "build": {
       "outputs": ["dist/**", ".next/**"],
       "dependsOn": ["^build"]
     },
-    "lint": {
+    "test": {
+      "outputs": ["coverage/**"],
       "dependsOn": []
+    },
+    "lint": {
+      "outputs": []
     },
     "dev": {
       "cache": false
